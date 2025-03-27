@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONNECT - Software Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --background-light: #ffffff;
+            --text-light: #333;
+            --background-dark: #121212;
+            --text-dark: #f1f1f1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-light);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: white;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .service-box {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 300px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">KONNECT</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
+    
+    <section id="hero">
+        <h1>Welcome to KONNECT</h1>
+        <p>Innovative Software Solutions for a Digital Future</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>KONNECT is a leading software company dedicated to delivering cutting-edge technology solutions.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Custom Software Development</h3>
+            <p>We create tailored software solutions for businesses of all sizes.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cloud Solutions</h3>
+            <p>Secure and scalable cloud services for modern enterprises.</p>
+        </div>
+        <div class="service-box">
+            <h3>AI & Automation</h3>
+            <p>Leverage AI to optimize and automate business processes.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@konnect.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 KONNECT. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
